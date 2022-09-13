@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS calc 02</title>
+    <style>
+        /* https://caniuse.com/#feat=css-grid */
+        
+        html,
+        body {
+            margin: 20px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            color: white;
+            font-size: 30px;
+            background: rgb(161, 21, 75);
+        
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(5, 150px);
+            gap: 15px 15px;
+        }
+        .enter{
+            grid-row-end: span 2;
+        }
+        .d17{
+            grid-column-end: span 2;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="d1">Num <br> Lock</div>
+    <div class="divisao">*</div>
+    <div class="mult">/</div>
+    <div class="menos">-</div>
+    <div class="d5">7</div>
+    <div class="d6">8</div>
+    <div class="d7">9</div>
+    <div class="soma">+</div>
+    <div class="d9">4</div>
+    <div class="d10">5</div>
+    <div class="d11">6</div>
+    <div class="d12">.</div>
+    <div class="d13">1</div>
+    <div class="d14">2</div>
+    <div class="d15">3</div>
+    <div class="enter">Enter</div>
+    <div class="d17">0</div>
+    <div class="delete">,</div>
+</body>
+
+</html>
